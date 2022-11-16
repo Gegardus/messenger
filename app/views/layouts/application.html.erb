@@ -10,9 +10,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <p class="notice" style="color: green"><%= notice %></p>
-    <p class="alert" style="color: red"><%= alert %></p>
+  <body>  
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-end">
         <div class="navbar-item">
@@ -25,6 +23,8 @@
         </div>
       </div>
     </nav>
+    <p id="notice" style="color: green"><%= notice %></p>
+    <p id="alert" style="color: red"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
