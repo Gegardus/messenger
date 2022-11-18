@@ -1,5 +1,4 @@
-<h1>Hangouts Home Page</h1>
-<p> You are signed with email: <strong><%= current_user.email%></strong></p>
+<h1><strong>Confident Chat</strong></h1>
 <div>
   <div id="message-display">
     <% @messages.each do |message| %>
@@ -19,14 +18,12 @@
         <div class="control">
           <%= f.text_field :body, id: 'message-input', class: 'input' %>
         </div>
-      <div class="control">
-        <%= f.submit 'Send Message', class: 'button is-primary' %>
+        <div class="control">
+          <%= f.submit 'Send Message', class: 'button is-primary' %>
+        </div>             
       </div>
-  </div>
-<% end %>
-
-
-  </div>
+    <% end %>
+    <div><p class=""><strong><em><%= current_user.email%></em></strong></p></div>  
+  </div>  
 </div>
-
 
